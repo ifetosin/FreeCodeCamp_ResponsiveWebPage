@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tribute Page">
+    <meta name="author" content="Ife Oluwatosin">
+
+
+    <link href="survey.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">UX Design Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve our User Experience
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+          <label id="job-role" for="name">Job Role</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Please input your Job Role"
+            required
+          />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label number" for="number"
+        >Years of Experience<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="experience"
+        id="number"
+        min="1"
+        max="20"
+        class="form-control"
+        placeholder="Years of Experience"
+      />
+    </div>
+
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">UX Researcher</option>
+        <option value="job">UX Writer</option>
+        <option value="learner">UX/UI designer</option>
+        <option value="preferNo">Front End Developer</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Do you think User Experience Research is Important?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite part of UX field?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">UX Research</option>
+        <option value="projects">UX Writing</option>
+        <option value="community">UX Design</option>
+        <option value="openSource">None</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to recommend to companies?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="training"
+          type="checkbox"
+          class="input-checkbox"
+        />Do more Design Trainings</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="research"
+          type="checkbox"
+          class="input-checkbox"
+        />Do more User Researches</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="interviews"
+          type="checkbox"
+          class="input-checkbox"
+        />Do more User Researches</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="team"
+          type="checkbox"
+          class="input-checkbox"
+        />Have a Dedicated User Experience Design Team</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />City Meetups</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
